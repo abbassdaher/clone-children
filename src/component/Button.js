@@ -1,10 +1,11 @@
 import React from "react";
 
-function Button({ color, customClass, children }) {
+function Button({ color, backgroundColor, customClass, children, callBackfn }) {
   return (
     <button
-      className={`${customClass ? ('button' + customClass) : 'button'}`}
-      style={{ color: color }}
+      className={`${customClass ? "button" + customClass : "button"}`}
+      style={{ color: color, backgroundColor: backgroundColor }}
+      onClick={callBackfn}
     >
       {children}
     </button>

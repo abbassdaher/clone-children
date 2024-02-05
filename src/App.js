@@ -9,6 +9,10 @@ function App() {
 
       <ButtonGroup>
         <Button>test2</Button>
+        <Button>test3</Button>
+        <Button>test4</Button>
+
+
       </ButtonGroup>
     </div>
   );
