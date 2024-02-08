@@ -6,6 +6,7 @@ function List({ children, items,}) {
     (el) =>
       React.cloneElement(children, {
         item: el,
+        key: el.id,
       })
     // React.cloneElement.map(children, (child) => {
     //   return
